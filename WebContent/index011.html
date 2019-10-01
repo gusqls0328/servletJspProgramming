@@ -1,0 +1,45 @@
+<%@ page contentType="text/html;charset=UTF-8"%> <!-- 페이지 지시자 -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h3>SurvletJspProgramming</h3>
+			</div>
+			<div id="content">
+				<div id="sideBar">
+					<ul>
+					
+						<li><a href="dispatcher1" target="iframe">서블릿 작성과 URL 매핑</a></li>
+						<li><a href="dispatcher2" target="iframe">서블릿 초기화</a></li>
+						<li><a href="dispatcher3" target="iframe">GET 방식으로 요청</a></li><!-- GET방식으로 요청  -->
+						<li>
+							<form action="dispatcher3" method="get" target="iframe"></form> 
+								<input type="submit" value="GET 방식으로 요청"/>
+							</form>
+						</li>
+						<li>
+							<form action="dispatcher3" method="post" target="iframe"></form> <!-- action은 밑의 input으로 요청하는 것을 뜻한다? -->
+								<input type="submit" value="POST방식으로 요청"/>
+							</form>
+						</li>
+						
+					</ul>
+				</div>
+				<div id="center">
+					<iframe name= "iframe" src="https://tomcat.apache.org/" frameborder="0"></iframe>
+				</div>
+			</div>
+			<div id="footer">2019. IoT. K.H.B</div>
+		</div>
+	</body>
+</html>
